@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>projects</artifactId>
+        <groupId>edu.cau.cps.cis301.YOUR_CAU_USERNAME</groupId>
+        <version>Fall2019</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>project1</artifactId>
+    <dependencies>
+       <dependency>
+            <groupId>edu.cau.cps.cis301</groupId>
+            <artifactId>family</artifactId>
+            <version>Fall2019</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.cau.cps.cis301</groupId>
+            <artifactId>archetypes-projects</artifactId>
+            <version>Fall2019</version>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-core</artifactId>
+        <version>1.3</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-library</artifactId>
+        <version>1.3</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>2.18.3</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>javax.mail-api</artifactId>
+        <version>1.6.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>4.2.0</version>
+    </dependency>
+    <!--<dependency>-->
+    <!--<groupId>org.codehaus.groovy</groupId>-->
+    <!--<artifactId>groovy-all</artifactId>-->
+    <!--&lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+    <!--<version>2.5.3</version>-->
+    <!--</dependency>-->
+</dependencies>
+<build>
+<plugins>
+    <plugin>
+        <groupId>org.codehaus.gmavenplus</groupId>
+        <artifactId>gmavenplus-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>addSources</goal>
+                    <goal>addTestSources</goal>
+                    <goal>generateStubs</goal>
+                    <goal>compile</goal>
+                    <goal>testGenerateStubs</goal>
+                    <goal>testCompile</goal>
+                    <goal>removeStubs</goal>
+                    <goal>removeTestStubs</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+    <!--<plugin>-->
+    <!--<groupId>org.apache.maven.plugins</groupId>-->
+    <!--<artifactId>maven-compiler-plugin</artifactId>-->
+    <!--</plugin>-->
+    <plugin>
+        <!-- if including source jars, use the no-fork goals
+             otherwise both the Groovy sources and Java stub sources
+             will get included in your jar -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <!-- source plugin \> = 2.1 is required to use the no-fork goals -->
+        <version>2.4</version>
+        <executions>
+            <execution>
+                <id>attach-sources</id>
+                <goals>
+                    <goal>jar-no-fork</goal>
+                    <goal>test-jar-no-fork</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+</plugins>
+</build>
+</project>

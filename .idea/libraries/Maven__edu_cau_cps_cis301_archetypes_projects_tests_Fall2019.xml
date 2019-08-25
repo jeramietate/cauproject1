@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: edu.cau.cps.cis301:archetypes-projects:tests:Fall2019">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/cau/cps/cis301/archetypes-projects/Fall2019/archetypes-projects-Fall2019-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/cau/cps/cis301/archetypes-projects/Fall2019/archetypes-projects-Fall2019-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/cau/cps/cis301/archetypes-projects/Fall2019/archetypes-projects-Fall2019-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

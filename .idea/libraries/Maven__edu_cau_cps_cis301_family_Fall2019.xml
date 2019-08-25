@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: edu.cau.cps.cis301:family:Fall2019">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/cau/cps/cis301/family/Fall2019/family-Fall2019.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/cau/cps/cis301/family/Fall2019/family-Fall2019-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/cau/cps/cis301/family/Fall2019/family-Fall2019-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
